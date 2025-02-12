@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\DB;
 return new class extends Migration {
     public function up(): void
     {
+        DB::unprepared('DROP PROCEDURE IF EXISTS GetHallsWithFacilities');
+        
         DB::unprepared('
             CREATE PROCEDURE GetHallsWithFacilities()
             BEGIN
