@@ -18,6 +18,7 @@ class HallFacilitySeeder extends Seeder {
             ['name' => 'WiFi'],
             ['name' => 'Beamer'],
             ['name' => 'Airco'],
+            ['name' => 'Whiteboard'], // Nieuwe faciliteit
         ]);
 
         // Koppel faciliteiten aan zalen
@@ -26,6 +27,7 @@ class HallFacilitySeeder extends Seeder {
             ['hall_id' => 1, 'facility_id' => 2], // Grote Conferentiezaal - Beamer
             ['hall_id' => 2, 'facility_id' => 1], // Vergaderruimte A - WiFi
             ['hall_id' => 2, 'facility_id' => 3], // Vergaderruimte A - Airco
+            ['hall_id' => 2, 'facility_id' => 4], // Vergaderruimte A - Whiteboard
         ]);
     }
 }

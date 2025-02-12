@@ -10,3 +10,6 @@ Route::get('/', function () {
 
 
 Route::get('/halls', [HallController::class, 'getHallsWithFacilities']);
+Route::get('/halls/with-min-capacity', [HallController::class, 'getHallsWithMinCapacity']);
+Route::get('/halls/with-min-capacity-eloquent', [HallController::class, 'getHallsWithMinCapacityEloquent']);
+Route::get('/halls/with-min-capacity-querybuilder', [HallController::class, 'getHallsWithMinCapacityQueryBuilder']);

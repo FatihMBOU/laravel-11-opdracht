@@ -15,6 +15,7 @@ return new class extends Migration {
                 FROM halls
                 LEFT JOIN hall_facility ON halls.id = hall_facility.hall_id
                 LEFT JOIN facilities ON hall_facility.facility_id = facilities.id
+                WHERE hall_facility.facility_id IS NOT NULL
                 GROUP BY halls.id;
             END
         ');
